@@ -5675,6 +5675,8 @@ body:active .container__16eb0:not(:active) {
   background: linear-gradient(180deg, var(--popout-color) 0%, var(--popout-color-alt) 100%);
   padding: 12px 16px;
   gap: 12px;
+  align-items: center;
+  min-height: 56px;
 }
 
 .soundboardHeader__08434 .queryContainer__55c99 {
@@ -5701,11 +5703,80 @@ body:active .container__16eb0:not(:active) {
   background-color: var(--button-secondary-background);
 }
 
+/* Soundboard header structure from HTML */
+.header__0856d {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.header__0856d .wrapper__0d1ef {
+  flex: 1;
+  min-width: 0;
+}
+.header__0856d .container__72c38,
+.header__0856d .wrapper__72c38 {
+  height: 40px;
+}
+.header__0856d .wrapper__72c38 {
+  padding-inline: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-color);
+  box-shadow: none;
+}
+.header__0856d .input__0f084 {
+  height: 38px;
+  line-height: 38px;
+}
+.header__0856d .icon__0f084 {
+  margin-inline-start: 4px;
+}
+.header__0856d .settingsClickArea__61424 {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: var(--button-secondary-background);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.header__0856d .settingsClickArea__61424:hover {
+  background-color: var(--button-secondary-background-hover, var(--button-secondary-background));
+}
+.header__0856d .settingsIcon__61424 {
+  width: 20px;
+  height: 20px;
+}
+
 .categoryList_a1e0e0 {
   inset-block-start: 64px;
 }
 .categoryList_a1e0e0 .scrollerBase_d125d2 {
   --scrollbar-width: 0;
+}
+
+.listWrapper__0856d {
+  padding: 12px;
+}
+.listWrapper__0856d .scrollerBase_d125d2 {
+  padding: 0 4px 8px;
+}
+.sectionContainer__61424 {
+  margin-block: 10px 6px;
+  border-radius: 14px;
+  background-color: var(--card-color-filled);
+  border: 1px solid var(--separator-color);
+}
+.sectionHeader__61424 {
+  padding: 10px 12px;
+}
+.soundRow__61424 {
+  padding: 0 10px 10px;
+  gap: 8px;
+}
+.soundButtonWrapper__9be63 {
+  width: calc((100% - 16px) / 3);
 }
 
 .soundButton__9be63 {

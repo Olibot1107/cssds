@@ -1,0 +1,55 @@
+@import url("parts/00-imports.css");
+@import url("parts/01-variables.css");
+@import url("parts/02-app-shell.css");
+@import url("parts/03-channels-and-voice.css");
+@import url("parts/04-chat-and-dms.css");
+@import url("parts/05-plugins.css");
+@import url("parts/06-discover-forum-ui.css");
+@import url("parts/07-activity-friends-nitro.css");
+@import url("parts/08-messages-and-attachments.css");
+@import url("parts/09-modals-popouts-misc.css");
+@import url("parts/10-server-settings.css");
+@import url("parts/11-user-settings.css");
+@import url("parts/12-sidebar-shop-animations-fonts.css");
+
+* {
+  transition: color 0.2s ease-in-out;
+  transition-property: background-color, color;
+}
+
+.theme-dark {
+  --main-color: #0e1415;
+  --main-alt: #161d1d;
+  --message-color: #090f10;
+  --message-color-hover: #1a2121;
+  --message-color-alt: #1a2121;
+  --attachment-color: #0e1415;
+  --accent-hue: 183deg;
+  --accent-saturation: 53%;
+  --accent-lightness: 67%;
+  --accent-text-color: #003739;
+  --main-textarea-color: #252b2b;
+  --main-textarea-color-alt: #303636;
+  --status-picker-color: #252b2b;
+  --tooltip-color: #1a2121;
+  --popout-color: #1a2121;
+  --popout-color-alt: #090f10;
+  --popout-header-border: #dde4e3;
+  --separator-color: #3f4949;
+  --sidebar-panel-color: #090f10;
+  --server-color: #161d1d;
+}
+
+[class*=botTag_] svg path {
+  fill: currentColor;
+}
+
+[class*=repliedTextContent_] {
+  padding: 0px 5px 0px 5px !important;
+}
+
+[class*=userPopoutOuter_] {
+  border-radius: 16px !important;
+}
+
+/*# sourceMappingURL=material-discord.css.map */

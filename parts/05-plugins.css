@@ -1,0 +1,2283 @@
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> BetterAnimations
+ *
+ */
+[class*=BA__module] .wrapper_c19a55:not(.groupStart__5126c) {
+  border-radius: var(--message-radius);
+}
+[class*=BA__module] .wrapper_c19a55:before, [class*=BA__module] .wrapper_c19a55:after {
+  display: none;
+}
+[class*=BA__module] .cozy_c19a55:not(.groupStart__5126c) {
+  margin-block-start: 2px;
+  padding: var(--message-padding-top) var(--message-padding-side) !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> BetterFormattingRedux
+ *
+ */
+.bf-toolbar {
+  z-index: 2;
+}
+.bf-toolbar .bf-arrow {
+  transform: translate(14px, -18px);
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> ChannelDms
+ *
+ */
+.ChannelDms-channelmembers-wrap .ChannelDms-channelmembers-header {
+  padding: 0 !important;
+  background-color: var(--main-color) !important;
+  border-bottom-color: var(--popout-header-border) !important;
+}
+.ChannelDms-channelmembers-wrap .ChannelDms-channelmembers-header .item_aa8da2 {
+  height: 46px;
+  padding: 0 8px;
+  line-height: 46px;
+}
+.ChannelDms-channelmembers-wrap .privateChannels_e6b769 {
+  width: 240px;
+}
+.ChannelDms-channelmembers-wrap .privateChannelsHeaderContainer__99e7c {
+  padding: 18px 8px 4px 16px;
+}
+.ChannelDms-channelmembers-wrap .channel__972a0 {
+  margin-inline-start: 8px;
+  margin-inline-end: 0;
+  border-radius: 21px 0 0 21px;
+}
+.ChannelDms-channelmembers-wrap .channel__972a0 .interactive_bf202d {
+  padding-inline-end: 0;
+  padding-inline-start: 8px;
+}
+
+.ChannelDms-channelpopout-popout {
+  background-color: var(--chat-color) !important;
+  border-radius: var(--popout-radius-big);
+  box-shadow: var(--shadow-medium) !important;
+}
+.ChannelDms-channelpopout-popout .ChannelDms-channelpopout-removeButton {
+  z-index: 3;
+}
+.ChannelDms-channelpopout-popout .ChannelDms-channelpopout-content {
+  margin-block-end: -4px;
+  border-radius: var(--popout-radius-big) !important;
+}
+.ChannelDms-channelpopout-popout .ChannelDms-channelpopout-collapseButton {
+  background-color: var(--popout-color) !important;
+  box-shadow: var(--shadow-medium);
+}
+.ChannelDms-channelpopout-popout .ChannelDms-channelpopout-header {
+  position: relative;
+  padding: 8px !important;
+  background-color: var(--main-color) !important;
+  z-index: 2;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> ChannelTabs
+ *
+ */
+#channelTabs-container {
+  padding: 4px 8px 0 8px !important;
+}
+
+.channelTabs-tabContainer {
+  gap: 4px;
+}
+.channelTabs-tabContainer .channelTabs-tabNav {
+  gap: 4px;
+  margin: 0 4px 0 0 !important;
+}
+.channelTabs-tabContainer .channelTabs-tabNav > div {
+  width: 28px;
+  height: 28px;
+  margin-inline-end: 0 !important;
+  border-radius: 16px !important;
+  transition: var(--default-time) var(--default-animation) background-color, var(--default-time) var(--default-animation) color;
+  cursor: pointer;
+}
+.channelTabs-tabContainer .channelTabs-tabNav > div:hover {
+  background-color: var(--menu-item-hover) !important;
+}
+
+.channelTabs-tab {
+  --inverted-curve-size: 16px;
+  position: relative;
+  margin-block-end: 0 !important;
+  border-radius: 12px 12px 0 0 !important;
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.channelTabs-tab:hover {
+  background-color: var(--menu-item-hover) !important;
+}
+.channelTabs-tab:hover:before, .channelTabs-tab:hover:after {
+  box-shadow: 0 calc(var(--inverted-curve-size) / 2 * -1) 0 0 var(--menu-item-hover);
+}
+.channelTabs-tab.channelTabs-selected {
+  background: var(--main-color) !important;
+  z-index: 2;
+}
+.channelTabs-tab.channelTabs-selected:before, .channelTabs-tab.channelTabs-selected:after {
+  box-shadow: 0 calc(var(--inverted-curve-size) / 2 * -1) 0 0 var(--main-color);
+}
+.channelTabs-tab:before, .channelTabs-tab:after {
+  position: absolute;
+  content: " ";
+  width: calc(var(--inverted-curve-size) / 2);
+  height: var(--inverted-curve-size);
+  inset-block-end: 0;
+  background-color: transparent;
+  transform: rotate(180deg);
+  pointer-events: none;
+  transition: var(--default-time) var(--default-animation) box-shadow;
+}
+.channelTabs-tab:before {
+  inset-inline-start: calc(var(--inverted-curve-size) / 2 * -1);
+  border-top-left-radius: calc(var(--inverted-curve-size) / 2);
+}
+.channelTabs-tab:after {
+  inset-inline-end: calc(var(--inverted-curve-size) / 2 * -1);
+  border-top-right-radius: calc(var(--inverted-curve-size) / 2);
+}
+.channelTabs-tab .channelTabs-tabName {
+  margin-inline-end: 0 !important;
+  font-weight: 500;
+  transition: var(--default-time) var(--default-animation) color;
+}
+.channelTabs-tab .channelTabs-gridContainer {
+  gap: 6px;
+  margin-inline-end: 0;
+}
+
+.channelTabs-unreadBadge {
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+  color: var(--accent-text-color--material-you) !important;
+}
+
+.channelTabs-mentionBadge {
+  background-color: hsl(var(--alert-hsl)) !important;
+  color: var(--alert-text-color) !important;
+}
+
+.channelTabs-closeTab {
+  border-radius: 8px !important;
+  transition: var(--default-time) var(--default-animation) background-color, var(--default-time) var(--default-animation) color;
+}
+
+.channelTabs-newTab {
+  width: 28px !important;
+  height: 28px !important;
+  margin: 0 0 0 4px !important;
+  border-radius: 14px !important;
+}
+
+.channelTabs-favContainer {
+  position: relative;
+  background-color: var(--main-alt);
+  z-index: 3;
+}
+.channelTabs-favContainer .channelTabs-fav {
+  border-radius: 14px;
+  transition: var(--default-time) var(--default-animation) background-color;
+  cursor: pointer;
+}
+.channelTabs-favContainer .channelTabs-fav:hover {
+  background-color: var(--menu-item-hover);
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> CharCounter
+ *
+ */
+.chatContent_f75fb0 .charCounterAdded-zz9O4t .channelTextArea__74017 {
+  margin-block-end: 0 !important;
+}
+.chatContent_f75fb0 .charCounterAdded-zz9O4t .channelTextArea__74017 .scrollableContainer__74017 {
+  border-radius: var(--main-textarea-radius) var(--main-textarea-radius) 0 0;
+}
+.chatContent_f75fb0 .counter-uAzbKp {
+  height: 28px;
+  line-height: 28px !important;
+  padding: 0 16px;
+  line-height: var(--main-textarea-radius);
+  background-color: var(--main-textarea-color);
+  border-radius: 0 0 var(--main-textarea-radius) var(--main-textarea-radius);
+  text-align: right;
+  font-weight: 500;
+}
+.chatContent_f75fb0 .counter-uAzbKp:before {
+  position: absolute;
+  content: " ";
+  width: calc(100% - 24px);
+  height: 1px;
+  inset-block-start: 0;
+  inset-inline-start: 12px;
+  background-color: var(--main-textarea-border);
+}
+.chatContent_f75fb0 .counter-uAzbKp.chatCounter-XOMPsh {
+  position: relative;
+  inset-block-end: auto;
+  margin-block-end: 12px;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> HideChannels
+ *
+ */
+.sidebar__5e434.hideElement .container__37e49 {
+  height: 52px !important;
+  margin-block-end: 0 !important;
+  background-color: var(--chat-color) !important;
+}
+.sidebar__5e434.hideElement + .chat_f75fb0 {
+  border-top-left-radius: var(--card-radius-big);
+}
+.sidebar__5e434.hideElement + .chat_f75fb0 .typing_b88801 {
+  width: calc(100% + 240px);
+  inset-inline-start: -240px;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> ImageUtilities
+ *
+ */
+.menu_c1e9c4 .item_c1e9c4 {
+  /* SUBMENU WITH ARROW */
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-copy-link:after {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/content_copy.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-copy-media-link:after {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/content_copy.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-open-link:after {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/open_in_new.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-copy-file:after {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/image_copy.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-view-file:after {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/image_view.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-download-file-as:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/save.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-submenu-search:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/search.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#message-imageutilities-main-subitem:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/image_view.svg);
+}
+.menu_c1e9c4 .item_c1e9c4#user-context-imageutilities-main-subitem:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/image_view.svg);
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> CharCounter
+ *
+ */
+#MemberCount {
+  margin-block-start: 0 !important;
+  background-color: var(--main-color) !important;
+}
+#MemberCount .membersGroup_c8ffbb {
+  padding: 16px;
+  line-height: 14px;
+}
+
+.membersWrap_c8ffbb.hasCounter .members_c8ffbb {
+  margin-block-start: 47px !important;
+}
+
+#vc-membercount {
+  margin-block-end: 0 !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> PasscodeLock
+ *
+ */
+.PCL--layout-bg {
+  background-color: var(--main-alt) !important;
+  backdrop-filter: none !important;
+}
+
+.PCL--icon {
+  padding: 16px;
+  background-color: var(--card-color-hover);
+  border-radius: 50%;
+}
+
+.theme-light .PCL--icon {
+  background-color: var(--switch-knob-color);
+}
+
+.PCL--title {
+  color: var(--header-primary);
+}
+
+.PCL--dot:before {
+  background: var(--interactive-text-default) !important;
+}
+
+.PCL--divider {
+  display: none;
+}
+
+.PCL--buttons {
+  grid-template-columns: repeat(3, 80px) !important;
+  grid-auto-rows: 80px !important;
+  gap: 16px !important;
+  padding: 16px 20px 40px !important;
+}
+
+.PCL--btn {
+  background-color: var(--card-color-filled);
+  color: var(--interactive-text-default);
+  transition: var(--default-time) var(--default-animation) border-radius, var(--default-time) var(--default-animation) background-color, var(--default-time) var(--default-animation) color !important;
+}
+.PCL--btn:hover {
+  background-color: var(--card-color-active) !important;
+}
+.PCL--btn:active {
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+  border-radius: 20px !important;
+  color: var(--accent-text-color--material-you);
+}
+.PCL--btn:active .PCL--btn-dec {
+  color: var(--accent-text-color--material-you);
+}
+.PCL--btn#PCLBtn-Escape, .PCL--btn#PCLBtn-Backspace {
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+  color: var(--accent-text-color--material-you);
+}
+.PCL--btn .PCL--btn-number {
+  font-weight: 400;
+}
+.PCL--btn .PCL--btn-dec {
+  color: var(--text-muted);
+  transition: var(--default-time) var(--default-animation) color !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> PermissionsViewer
+ *
+ */
+#permissions-modal-wrapper #permissions-modal {
+  max-height: 80vh;
+  border-radius: var(--popout-radius-big) !important;
+  box-shadow: var(--shadow-medium) !important;
+  border: none !important;
+}
+#permissions-modal-wrapper .header {
+  background-color: var(--popout-color) !important;
+  padding: 16px !important;
+  box-shadow: none !important;
+  border-block-end: 1px solid var(--popout-header-border);
+  line-height: 20px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--header-primary) !important;
+}
+#permissions-modal-wrapper .modal-body {
+  background-color: var(--popout-color) !important;
+}
+#permissions-modal-wrapper .role-side {
+  padding: 16px 0 16px 16px !important;
+  background-color: transparent !important;
+  border-inline-end: 1px solid var(--popout-header-border);
+}
+#permissions-modal-wrapper .role-scroller {
+  padding-block-start: 0;
+}
+#permissions-modal-wrapper .perm-side {
+  padding: 0 0 16px 16px !important;
+  background-color: transparent !important;
+}
+#permissions-modal-wrapper .role-item {
+  margin-block-end: 2px !important;
+  padding: 6px 12px !important;
+  border-radius: 14px !important;
+}
+#permissions-modal-wrapper .role-item:hover {
+  background-color: var(--menu-item-hover) !important;
+}
+#permissions-modal-wrapper .role-item.selected {
+  background-color: var(--menu-item-select) !important;
+}
+#permissions-modal-wrapper .perm-item {
+  position: relative;
+  border-block-end: none;
+  box-shadow: none !important;
+}
+#permissions-modal-wrapper .perm-item:after {
+  position: absolute;
+  content: " ";
+  width: calc(100% - 0px * 2);
+  height: 1px;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  margin: 0 0px;
+  background-color: var(--card-border-color);
+}
+#permissions-modal-wrapper .perm-item:last-of-type:after {
+  display: none;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> PersonalPins
+ *
+ */
+.themedPopout-1TrfdI {
+  border-radius: var(--popout-radius-big);
+  box-shadow: var(--shadow-medium);
+}
+.themedPopout-1TrfdI .header-145e10 {
+  padding-block-end: 0 !important;
+}
+.themedPopout-1TrfdI .title-3OGHA5 {
+  margin-block-start: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.themedPopout-1TrfdI .container__33507 {
+  margin-block-start: 16px;
+}
+.themedPopout-1TrfdI .tab_ab6641 {
+  height: 32px;
+  margin-inline-end: 16px;
+  padding: 0;
+}
+.themedPopout-1TrfdI .tab_ab6641:first-child {
+  margin-inline-end: 16px;
+}
+.themedPopout-1TrfdI .tabBar_ab6641 .item_aa8da2 {
+  height: 32px;
+}
+.themedPopout-1TrfdI .quickSelectWrapper-UCfTKz {
+  margin-inline-end: 16px;
+  font-weight: 500;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> PluginRepo
+ *
+ */
+.repoHeader_2KfNvH {
+  margin: 0 32px 0 0 !important;
+  padding-block-end: 0 !important;
+}
+
+.repoScroller_9JnAPs {
+  margin: 0 !important;
+  padding-block-start: 16px !important;
+  padding-inline-end: 82px !important;
+}
+.repoScroller_9JnAPs .tabContent_nZ-1U5 {
+  margin-block-start: 0;
+}
+
+.card_x5zW6z {
+  height: 400px;
+  background-color: var(--card-color-filled) !important;
+  border-radius: var(--card-radius-big);
+  border: none;
+  box-shadow: none;
+}
+.card_x5zW6z:hover {
+  box-shadow: none;
+  transform: none;
+}
+.card_x5zW6z:hover .coverWrapper_J-mDGJ {
+  transform: none;
+}
+.card_x5zW6z .coverWrapper_J-mDGJ,
+.card_x5zW6z .cover_qyY86I {
+  border-radius: var(--card-radius-big);
+}
+.card_x5zW6z .coverBadge_I41ZIY {
+  background-color: hsl(var(--alert-hsl)) !important;
+  color: var(--alert-text-color);
+  border-radius: 8px !important;
+  text-transform: capitalize !important;
+  font-size: 14px;
+}
+.card_x5zW6z .iconWrapper_eK7GO6 {
+  background-color: var(--card-color-active) !important;
+  border-radius: 50%;
+  border: 4px solid var(--card-color-filled);
+}
+.card_x5zW6z .info_xw-o76 {
+  overflow: visible;
+}
+.card_x5zW6z .title_SSzExd {
+  position: relative;
+  line-height: normal;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: var(--card-header-text-color);
+}
+.card_x5zW6z .title_SSzExd:before {
+  position: absolute;
+  content: " ";
+  width: 62px;
+  height: 32px;
+  inset-block-start: -2px;
+  inset-inline-end: -2px;
+  background-color: var(--card-button-color);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.button_SxdSzE {
+  position: relative;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50%;
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.button_SxdSzE:hover {
+  background-color: var(--card-button-color-hover);
+}
+.button_SxdSzE.favbutton_8Fzu45 {
+  margin-inline-start: 2px;
+}
+
+.tag_PbPfwP {
+  height: 24px;
+  padding: 0 8px;
+  background-color: var(--card-button-color) !important;
+  line-height: 24px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.button_coQXfM {
+  --button-padding-start: 16px;
+  --button-padding-end: 24px;
+  height: var(--button-height);
+  padding-inline-start: var(--button-padding-start);
+  padding-inline-end: var(--button-padding-end);
+  gap: 8px;
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+  border-radius: var(--button-radius);
+  font-size: 1em;
+  color: var(--accent-text-color--material-you);
+  transition: var(--default-time) var(--default-animation) background-color, var(--default-time) var(--default-animation) color;
+}
+.button_coQXfM[style="background-color: var(--status-positive);"] {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #fff;
+}
+.button_coQXfM[style="background-color: var(--status-danger);"] {
+  background-color: hsl(var(--alert-hsl)) !important;
+  color: var(--alert-text-color);
+}
+.button_coQXfM .statIcon_o40EX1 {
+  margin-inline-end: 0;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> ShowAllActivities
+ *
+ */
+.custom-user-profile-theme .wrapper .controls {
+  --popout-color: var(--profile-body-background-color);
+}
+.custom-user-profile-theme .wrapper .controls .carosell {
+  --carosell-dot-selected: var(--profile-gradient-secondary-color);
+}
+
+.wrapper .controls {
+  background-color: var(--popout-color) !important;
+  border-radius: 17px !important;
+}
+.wrapper .controls .caret {
+  border-radius: 50% !important;
+}
+.wrapper .controls .caret:not(.disabled) {
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+}
+.wrapper .controls .caret:not(.disabled) .SAA-caret {
+  color: var(--accent-text-color--material-you);
+}
+.wrapper .controls .carosell .dot.selected {
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> SpotifyControls
+ *
+ */
+.coverWrapper_791eb8 {
+  border-radius: calc(var(--sidebar-panel-radius-big) / 1.6);
+  transform: translateY(0) !important;
+}
+
+.container_791eb8 {
+  margin-block-end: 2px;
+  background-color: var(--sidebar-panel-color);
+  border-radius: var(--sidebar-panel-radius-small);
+  border-block-end: none !important;
+}
+.container_791eb8.maximized_791eb8 .coverWrapper_791eb8 {
+  inset-block-start: -2px;
+  border-radius: var(--sidebar-panel-radius-big);
+}
+.container_791eb8 .text-sm\/normal_cf4812 {
+  color: var(--text-subtle);
+}
+
+.timeline_791eb8 {
+  margin: 16px 0 8px;
+}
+.timeline_791eb8 .barFill_791eb8 {
+  background-color: hsl(var(--accent-hsl--material-you));
+}
+.timeline_791eb8 .grabber_791eb8 {
+  display: flex;
+}
+.timeline_791eb8 .grabber_791eb8:before {
+  background-color: hsl(var(--accent-hsl--material-you));
+}
+.timeline_791eb8:hover .barFill_791eb8 {
+  background-color: hsl(var(--accent-hsl--material-you));
+}
+.timeline_791eb8:hover .grabber_791eb8 {
+  display: flex;
+}
+.timeline_791eb8:hover .grabber_791eb8:before {
+  background-color: hsl(var(--accent-hsl--material-you));
+}
+
+.barFill_791eb8 {
+  transition: var(--default-time) ease width, var(--default-time) var(--default-animation) background-color;
+}
+
+.grabber_791eb8 {
+  --slider-grabber-height: 20px;
+  --slider-grabber-background: var(--sidebar-panel-color);
+  display: flex;
+  width: var(--slider-width);
+  height: var(--slider-grabber-height);
+  inset-block-start: calc((var(--slider-grabber-height) / 2 - 2px) * -1);
+  margin-block-start: 0;
+  background-color: var(--slider-grabber-background);
+  border-radius: 0;
+  border: none;
+  transform: translateX(0);
+  justify-content: center;
+  box-shadow: none !important;
+  z-index: 3;
+  transition: var(--default-time) ease left;
+}
+.grabber_791eb8:before {
+  position: absolute;
+  content: " ";
+  width: calc(var(--slider-width) / 4);
+  height: 100%;
+  inset-block-start: 0;
+  background-color: var(--text-secondary);
+  border-radius: calc(var(--slider-width) / 8);
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+
+.bar_791eb8 {
+  margin-block-end: 16px;
+}
+
+/* BETTERDISCORD PLUGIN -> SpotifyControls -> VENCORD */
+#vc-spotify-player {
+  margin-block-end: 2px;
+  padding: 12px !important;
+  background-color: var(--sidebar-panel-color) !important;
+  border-radius: 4px;
+  border-block-end: none !important;
+}
+#vc-spotify-player #vc-spotify-album-image {
+  border-radius: 50%;
+}
+#vc-spotify-player .vc-spotify-button-row {
+  gap: 8px !important;
+}
+#vc-spotify-player .vc-spotify-button {
+  color: var(--interactive-text-default) !important;
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+#vc-spotify-player .vc-spotify-play,
+#vc-spotify-player .vc-spotify-pause {
+  padding: 4px;
+  background-color: hsl(var(--accent-hsl--material-you));
+  color: var(--accent-text-color--material-you);
+  transition: var(--default-time) var(--default-animation) border-radius;
+}
+#vc-spotify-player .vc-spotify-play {
+  border-radius: 16px;
+  animation: vc-spotify-play-button var(--default-time) var(--default-animation);
+}
+#vc-spotify-player .vc-spotify-pause {
+  border-radius: 10px;
+  animation: vc-spotify-pause-button var(--default-time) var(--default-animation);
+}
+#vc-spotify-player .container__5a838 {
+  background-color: transparent;
+}
+
+#vc-spotify-progress-bar {
+  --slider-height: 6px;
+  --slider-grabber-height: 32px;
+  --slider-grabber-background: var(--sidebar-panel-color);
+}
+#vc-spotify-progress-bar .control__5a838 {
+  position: relative;
+  width: calc(100% - 84px);
+  inset-inline-start: 42px;
+}
+
+.vc-spotify-progress-time {
+  inset-block-start: 0;
+}
+
+.wrapper_e131a9:empty + #vc-spotify-player {
+  border-top-left-radius: var(--card-radius-big);
+  border-top-right-radius: var(--card-radius-big);
+}
+
+#vc-spotify-album-expanded-wrapper {
+  margin: -12px -12px 0;
+}
+#vc-spotify-album-expanded-wrapper img {
+  border-radius: var(--card-radius-big) !important;
+}
+
+.activityPanel__5e434 + .wrapper_e131a9:empty + #vc-spotify-player #vc-spotify-album-expanded-wrapper img,
+.wrapper_e131a9:not(:empty) + #vc-spotify-player #vc-spotify-album-expanded-wrapper img {
+  border-radius: 4px !important;
+}
+
+.vc-spotify-shuffle path {
+  d: path("M14.83,13.41L13.42,14.82L16.55,17.95L14.5,20H20V14.5L17.96,16.54L14.83,13.41M14.5,4L16.54,6.04L4,18.59L5.41,20L17.96,7.46L20,9.5V4M10.59,9.17L5.41,4L4,5.41L9.17,10.58L10.59,9.17Z");
+}
+
+.vc-spotify-play path {
+  d: path("M8,5.14V19.14L19,12.14L8,5.14Z");
+}
+
+.vc-spotify-pause path {
+  d: path("M14,19H18V5H14M6,19H10V5H6V19Z");
+}
+
+.vc-spotify-previous path {
+  d: path("M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z");
+}
+
+.vc-spotify-next path {
+  d: path("M16,18H18V6H16M6,18L14.5,12L6,6V18Z");
+}
+
+.vc-spotify-repeat path {
+  d: path("M17,17H7V14L3,18L7,22V19H19V13H17M7,7H17V10L21,6L17,2V5H5V11H7V7Z");
+}
+
+@keyframes vc-spotify-play-button {
+  from {
+    border-radius: 10px;
+  }
+}
+@keyframes vc-spotify-pause-button {
+  from {
+    border-radius: 16px;
+  }
+}
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> StatusEverywhere
+ *
+ */
+.StatusEverywhere-avatar-chatAvatar.accountSettingsAvatar {
+  width: 80px !important;
+  height: 80px !important;
+  inset-block-start: 76px;
+}
+
+.StatusEverywhere-avatar-userPopout {
+  background-color: var(--popout-color) !important;
+  border: none !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD PLUGIN -> UserDetails
+ *
+ */
+.UserDetails-activity-container img {
+  border-radius: 50%;
+}
+
+/*
+ *
+ *  BETTERDISCORD ADDONS
+ *
+ */
+.bd-search-wrapper {
+  padding: 0 8px;
+  background-color: var(--input-color);
+  border-radius: 13px;
+}
+.bd-search-wrapper .bd-search {
+  padding: 0;
+  line-height: 26px;
+  color: var(--interactive-text-default);
+}
+.bd-search-wrapper .bd-search::-webkit-input-placeholder {
+  font-family: var(--app-font);
+}
+
+.theme-light .bd-search-wrapper {
+  background-color: hsl(from var(--input-color) h s calc(l * 1.075));
+}
+
+.bd-addon-title > span {
+  border-radius: 8px;
+}
+.bd-addon-title[data-showing-store=true] > span:first-child {
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.bd-addon-title[data-showing-store=true] > span:first-child:hover {
+  background-color: var(--menu-item-hover);
+}
+
+.bd-addon-views .bd-view-button {
+  background-color: transparent !important;
+}
+.bd-addon-views .bd-view-button:not(.selected) svg[fill] {
+  fill: var(--interactive-text-default);
+}
+.bd-addon-views .bd-view-button.selected {
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+}
+.bd-addon-views .bd-view-button.selected svg {
+  fill: var(--accent-text-color--material-you);
+}
+
+.bd-addon-controls + .bd-addon-list {
+  margin-block-start: 16px;
+}
+
+#themes-tab .bd-addon-controls:after {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  content: "Theme Add-ons\a\aMaterial Discord has a few add-on themes to either enhance or revert\asome features that can be located at bit.ly/MaterialDiscordAddons.\a\a- Solid Icons\a- Old Message Bubbles\a- Material You";
+  width: 100%;
+  margin-block-start: 16px;
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+  box-shadow: none;
+  color: var(--interactive-text-default);
+  box-sizing: border-box;
+  white-space: pre;
+  word-wrap: break-word;
+  line-height: 18px;
+}
+
+.bd-empty-image-container {
+  margin-block-start: 24px;
+  max-width: unset;
+}
+
+.bd-addon-list.bd-grid-view {
+  margin: 16px 0 32px 0;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px clamp(8px, 2vw, 16px);
+  justify-content: center;
+}
+.bd-addon-list .bd-addon-card {
+  margin-block-end: 16px;
+}
+
+.bd-addon-card {
+  background-color: var(--card-color-filled) !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: var(--card-radius-big) !important;
+  box-shadow: none !important;
+}
+.bd-addon-card .bd-addon-header {
+  margin-block-end: 0;
+  padding: 16px;
+  background-color: transparent;
+  font-size: 1.25em;
+  line-height: normal;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+  opacity: 1;
+  border-block-end: none;
+  gap: 8px;
+}
+.bd-addon-card .bd-addon-header .bd-icon {
+  margin-inline-end: 0;
+}
+.bd-addon-card .bd-addon-header .bd-link {
+  color: hsl(var(--accent-hsl));
+}
+.bd-addon-card .bd-addon-header .bd-meta {
+  display: block;
+  font-size: 12px;
+}
+.bd-addon-card .bd-description-wrap {
+  padding: 0 16px;
+}
+.bd-addon-card .bd-description {
+  padding: 0;
+}
+.bd-addon-card .bd-footer {
+  background-color: transparent;
+}
+.bd-addon-card .bd-controls {
+  background-color: transparent;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.bd-addon-card .bd-controls .bd-button {
+  padding: 3px 8px;
+  background-color: var(--card-button-color) !important;
+  color: var(--interactive-text-default);
+}
+.bd-addon-card .bd-controls .bd-button:not([disabled]):hover {
+  background-color: var(--card-button-color-hover) !important;
+}
+.bd-addon-card path[d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"] {
+  d: path("M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612");
+  transform: scale(1.25) translate(2px, 2px);
+}
+
+.bd-links {
+  gap: 10px;
+}
+.bd-links .bd-addon-button + .bd-addon-button {
+  margin: 0;
+}
+
+.bd-description-wrap .banner {
+  margin-block-end: 16px;
+  padding: 8px;
+  border-radius: calc(var(--card-radius-big) / 1.5);
+  border: none;
+  color: var(--interactive-text-default);
+}
+
+.banner.banner-danger {
+  background-color: hsl(var(--alert-hsl), 0.3);
+}
+.banner.banner-danger .bd-icon {
+  fill: hsl(var(--alert-hsl));
+}
+
+/* BETTERDISCORD ADDONS -> BD ADDON MODAL */
+.bd-addon-modal .bd-addon-modal-header h1 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.bd-addon-modal .bd-select {
+  height: var(--input-height);
+  padding: 0 var(--input-padding);
+  background-color: var(--input-color);
+  border: none;
+  max-height: var(--input-height);
+  border-radius: calc(var(--input-height) / 2);
+  box-shadow: none;
+  font-size: 1em;
+}
+.bd-addon-modal .bd-select:focus-within {
+  box-shadow: none;
+}
+
+/*
+ *
+ *  BETTERDISCORD BUTTONS
+ *
+ */
+.bd-button {
+  --button-background: hsl(var(--accent-hsl--material-you));
+  --button-text-color: var(--accent-text-color--material-you);
+  --button-shadow: none;
+  --button-outline: none;
+  background-color: var(--button-background) !important;
+  border-radius: var(--button-radius);
+  border: var(--button-outline) !important;
+  box-shadow: var(--button-shadow);
+  color: var(--button-text-color) !important;
+}
+.bd-button:hover {
+  --button-shadow: none;
+}
+.bd-button:active {
+  --button-shadow: none;
+}
+.bd-button:after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  background-color: var(--button-action-color);
+  border-radius: var(--button-radius);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--default-time) var(--default-animation) opacity;
+}
+.bd-button:hover:after {
+  opacity: var(--button-action-hover);
+}
+.bd-button:active:after {
+  opacity: var(--button-action-active);
+}
+.bd-button:disabled {
+  opacity: 0.5 !important;
+}
+.bd-button:disabled:after {
+  display: none;
+}
+.bd-button .bd-button-content {
+  background-image: none !important;
+}
+
+.bd-button-filled.bd-button-color-red, .bd-button-filled.bd-button-danger {
+  --button-background: hsl(var(--alert-hsl));
+  --button-text-color: var(--alert-text-color);
+}
+
+.bd-button-link {
+  --button-padding-start: 12px;
+  --button-padding-end: 12px;
+  --button-background: transparent;
+  --button-shadow: none !important;
+}
+.bd-button-link:after {
+  --button-action-color: hsl(var(--accent-hsl--material-you));
+}
+.bd-button-link.bd-button-color-brand, .bd-button-link.bd-button-color-primary {
+  --button-text-color: hsl(var(--accent-hsl--material-you));
+}
+
+.bd-button-blank {
+  --button-background: transparent;
+  --button-shadow: none !important;
+  --button-text-color: var(--interactive-text-default);
+}
+
+.bd-button-medium,
+.bd-button-large {
+  min-width: var(--button-height);
+  height: var(--button-height);
+  min-height: var(--button-height);
+}
+
+/*
+ *
+ *  BETTERDISCORD SETTINGS
+ *
+ */
+.bd-settings-title {
+  color: var(--header-primary);
+}
+
+.bd-settings-group.collapsible {
+  margin-block-end: var(--space-8);
+  padding: var(--space-16);
+  background-color: var(--card-color-filled);
+  border-radius: var(--card-radius-big);
+}
+.bd-settings-group.collapsible.expanded .bd-settings-container {
+  margin-block-start: var(--space-24);
+}
+.bd-settings-group.collapsible .bd-settings-group-title {
+  margin-block-end: 0;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bd-settings-group.collapsible .bd-settings-group-title:before {
+  display: none;
+}
+.bd-settings-group.collapsible .bd-settings-container {
+  transition: var(--default-time) var(--default-animation) height, var(--default-time) var(--default-animation) margin-block-start;
+}
+.bd-settings-group.collapsible .bd-setting-item:last-of-type {
+  margin-block-end: 0;
+}
+.bd-settings-group.collapsible .bd-setting-item:last-of-type .bd-divider {
+  display: none;
+}
+.bd-settings-group ~ .bd-settings-group .bd-settings-title {
+  margin-block-start: 0;
+}
+
+.bd-settings-title.bd-settings-group-title {
+  text-transform: none;
+}
+
+.bd-divider {
+  border-block-start: thin solid var(--card-border-color);
+}
+
+.menu_c1e9c4 .bd-button {
+  display: none;
+}
+
+/*
+ *
+ *  BETTERDISCORD CSS EDITOR
+ *
+ */
+#bd-editor-panel {
+  border-radius: var(--card-radius-big);
+  overflow: hidden;
+}
+
+#bd-editor-controls {
+  background-color: var(--card-color-filled);
+  border-radius: var(--card-radius-big) var(--card-radius-big) 0 0;
+}
+
+#bd-customcss-editor {
+  background-color: var(--card-color-filled);
+}
+
+.monaco-editor {
+  outline: none;
+}
+.monaco-editor,
+.monaco-editor .monaco-editor-background,
+.monaco-editor .margin {
+  background-color: inherit !important;
+}
+.monaco-editor .overflow-guard {
+  border-radius: 0 0 var(--card-radius-big) var(--card-radius-big);
+  border-block-start: none;
+}
+.monaco-editor .minimap {
+  inset-inline-end: 7px;
+}
+.monaco-editor .minimap.minimap-shadow-visible {
+  box-shadow: none !important;
+}
+.monaco-editor .scroll-decoration {
+  box-shadow: none !important;
+}
+
+.monaco-editor *,
+.ace_editor *,
+.line-numbers * {
+  --app-font: var(--code-font), monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.monaco-editor .codicon[class*=codicon-],
+.ace_editor .codicon[class*=codicon-],
+.line-numbers .codicon[class*=codicon-] {
+  font-family: codicon !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD ERRORS
+ *
+ */
+.bd-error-modal-header {
+  padding: 24px 24px 0 !important;
+  border-block-end: 1px solid var(--popout-header-border);
+}
+.bd-error-modal-header .size14_a4e6b9 {
+  font-size: 22px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.bd-error-modal-content {
+  padding-block-start: 16px !important;
+}
+
+.bd-tab-bar {
+  height: 40px;
+  margin-inline-start: -8px;
+}
+.bd-tab-bar .bd-tab-item {
+  height: inherit;
+  margin-inline-end: 8px;
+  padding: 0 8px;
+  border-radius: 0;
+  color: var(--interactive-text-default);
+}
+.bd-tab-bar .bd-tab-item, .bd-tab-bar .bd-tab-item:hover, .bd-tab-bar .bd-tab-item.selected {
+  background-color: transparent;
+}
+.bd-tab-bar .bd-tab-item:hover {
+  color: var(--interactive-text-hover);
+}
+.bd-tab-bar .bd-tab-item.selected {
+  position: relative;
+  background-color: transparent !important;
+  border: none;
+  color: var(--interactive-text-default);
+}
+.bd-tab-bar .bd-tab-item.selected:after {
+  position: absolute;
+  content: " ";
+  width: 75%;
+  height: 3px;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  margin: 0 auto;
+  background: var(--tab-border-color);
+  border-radius: 3px;
+  transition: var(--default-time) ease all;
+}
+.bd-tab-bar .bd-tab-item:last-of-type {
+  margin-inline-end: 0;
+}
+
+.bd-error-modal-content {
+  padding-block-end: 0;
+}
+
+.bd-addon-errors {
+  margin-block-start: 0;
+}
+
+.bd-addon-error {
+  background-color: var(--card-color-filled) !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: var(--card-radius-big) !important;
+  box-shadow: none !important;
+}
+.bd-addon-error:last-of-type {
+  margin-block-end: 0;
+}
+.bd-addon-error .bd-addon-error-header {
+  padding: 16px;
+}
+.bd-addon-error .bd-addon-error-icon {
+  background-color: var(--attachment-color);
+}
+.bd-addon-error .bd-addon-error-body {
+  padding: 0 16px 16px;
+}
+.bd-addon-error .bd-divider {
+  display: none;
+}
+.bd-addon-error .bd-addon-error-stack code {
+  background-color: var(--attachment-color);
+  border-radius: var(--card-radius);
+  border: none;
+}
+
+/*
+ *
+ *  BETTERDISCORD MODALS
+ *
+ */
+.bd-modal-root {
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius-big);
+  border: none;
+  box-shadow: var(--shadow-medium);
+}
+.bd-modal-root .paragraph_d285a6 {
+  color: var(--interactive-text-default);
+}
+.bd-modal-root .bd-modal-footer {
+  background-color: transparent;
+  box-shadow: none;
+  gap: 8px;
+}
+.bd-modal-root .bd-settings-group {
+  --slider-grabber-background: var(--card-color-filled);
+}
+
+.bd-modal-header {
+  padding: 24px 24px 16px;
+}
+.bd-modal-header .bd-header-primary {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--header-primary);
+}
+
+.bd-modal-content {
+  padding: 0 24px;
+  color: var(--interactive-text-default);
+}
+.bd-modal-content.bd-scroller-thin {
+  padding: 0 16px 0 24px;
+}
+
+.bd-modal-footer {
+  padding: 24px;
+  background-color: transparent;
+}
+.bd-modal-footer .bd-button {
+  min-height: var(--button-height);
+  height: var(--button-height);
+  padding-inline-start: var(--button-padding-start);
+  padding-inline-end: var(--button-padding-end);
+  font-size: 14px;
+}
+
+/*
+ *
+ *  BETTERDISCORD NOTICES
+ *
+ */
+#bd-notices {
+  position: absolute;
+  inset-block-start: var(--space-8);
+  inset-inline-end: var(--space-8);
+  z-index: 1001;
+}
+#bd-notices:has(.bd-notice) {
+  width: auto;
+  inset-inline-start: unset;
+}
+
+.base__5e434:has(#bd-notices .bd-notice) {
+  margin-block-start: 0;
+}
+
+.bd-notice {
+  display: flex;
+  max-width: 25vw;
+  height: auto;
+  line-height: normal;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius-big);
+  box-shadow: var(--shadow-medium);
+}
+.bd-notice:first-child {
+  border-radius: var(--popout-radius-big);
+}
+.bd-notice:not(:only-child):last-child {
+  margin-block-start: 8px;
+}
+.bd-notice .bd-notice-close {
+  width: 18px;
+  height: 18px;
+  inset-block-start: 16px;
+  inset-inline-end: 16px;
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/close.svg);
+  -webkit-mask-repeat: no-repeat;
+  background-color: var(--header-secondary);
+  background-image: none;
+  -webkit-mask-position: center;
+  mask-position: center;
+  opacity: 0.75;
+}
+.bd-notice .bd-notice-content {
+  margin-inline-end: 30px;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: var(--header-primary) !important;
+  text-align: left;
+}
+.bd-notice .bd-notice-button {
+  display: flex;
+  height: var(--button-height);
+  line-height: var(--button-height);
+  inset-block-start: 0;
+  margin: 0;
+  justify-content: center;
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+  border-radius: var(--button-radius);
+  border: none;
+  color: var(--accent-text-color--material-you);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#bd-notifications-root {
+  padding: 0;
+}
+
+.bd-notification-top-right {
+  inset-block-start: calc(var(--custom-app-top-bar-height) + var(--space-16));
+  inset-inline-end: var(--space-16);
+}
+
+.bd-notification {
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius-big);
+  border: none;
+  box-shadow: var(--shadow-medium);
+  overflow: hidden;
+}
+
+.bd-notification-close {
+  inset-block-start: var(--space-16);
+  inset-inline-end: var(--space-16);
+}
+
+.bd-notification-content {
+  padding: var(--space-24) var(--space-24) 0;
+}
+
+.bd-notification-footer {
+  padding: var(--space-16) var(--space-24) calc(var(--space-24) - var(--space-4));
+  background-color: transparent;
+}
+
+.bd-notification-progress {
+  height: var(--space-4);
+  margin-block-start: 0;
+}
+.bd-notification-progress[style*="background-color: var(--bd-brand)"] {
+  background-color: hsl(var(--accent-hsl)) !important;
+}
+
+/*
+ *
+ *  BETTERDISCORD SELECT MENU
+ *
+ */
+.bd-select,
+.bd-label {
+  line-height: 26px;
+}
+
+.bd-select.bd-select-transparent {
+  gap: 4px;
+}
+.bd-select .bd-select-value {
+  padding-inline-start: 0;
+}
+.bd-select .bd-select-arrow {
+  height: 26px !important;
+  margin-inline-start: 0;
+}
+.bd-select .bd-select-options {
+  padding: 8px 0;
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius);
+  border: none;
+  box-shadow: var(--shadow-medium);
+  animation: opacity 100ms ease, open-context-menu 300ms var(--default-animation);
+  transform-origin: top;
+}
+.bd-select .bd-select-option {
+  min-height: 32px;
+  padding: 9px 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--menu-item-text-color);
+  box-sizing: border-box;
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.bd-select .bd-select-option:hover {
+  background-color: var(--menu-item-hover);
+}
+.bd-select .bd-select-option.selected {
+  background-color: var(--menu-item-select);
+}
+
+/*
+ *
+ *  BETTERDISCORD ADDON STORE
+ *
+ */
+.bd-store-card {
+  margin: 16px 0;
+  gap: 12px;
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.bd-store-card:hover {
+  background-color: var(--card-color-hover);
+}
+.bd-store-card .bd-store-card-icon {
+  background-color: var(--card-button-color);
+}
+.bd-store-card .bd-store-card-body {
+  margin-inline-start: 0;
+}
+
+.bd-addon-store {
+  margin: 16px 0 32px 0;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px clamp(8px, 2vw, 16px);
+  justify-content: center;
+}
+
+.bd-addon-store-card {
+  max-width: none;
+  background-color: var(--card-color-filled) !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: var(--card-radius-big) !important;
+  transition: var(--default-time) var(--default-animation) background-color !important;
+}
+.bd-addon-store-card:hover {
+  background-color: var(--card-color-hover) !important;
+}
+.bd-addon-store-card:hover {
+  transform: none !important;
+  box-shadow: var(--shadow-medium) !important;
+}
+.bd-addon-store-card:hover .bd-addon-store-card-author-mask {
+  background-color: var(--card-color-hover) !important;
+}
+.bd-addon-store-card:hover .bd-addon-store-card-author-mask foreignObject {
+  mask: none;
+}
+.bd-addon-store-card .bd-addon-store-card-preview-img {
+  border-radius: var(--card-radius-big);
+}
+.bd-addon-store-card .bd-addon-store-card-badge {
+  font-size: 0.8em;
+  text-transform: none;
+  background-color: hsl(var(--alert-hsl));
+  color: var(--alert-text-color);
+}
+.bd-addon-store-card .bd-addon-store-card-author-svg foreignObject {
+  mask: none;
+}
+.bd-addon-store-card .bd-addon-store-card-author-mask {
+  background-color: var(--card-color-filled);
+  border-radius: calc(var(--avatar-radius) + 1.6666666667px);
+}
+.bd-addon-store-card .bd-addon-store-card-author-mask .bd-addon-store-card-author-img {
+  border-radius: calc(var(--avatar-radius) / 1.2);
+}
+.bd-addon-store-card .bd-addon-store-card-tag {
+  height: 28px;
+  padding: 0 12px;
+  line-height: 28px;
+  background-color: transparent;
+  border-color: var(--card-border-color);
+  font-size: 0.9em;
+  transition: var(--default-time) var(--default-animation) background-color, var(--default-time) var(--default-animation) color;
+}
+.bd-addon-store-card .bd-addon-store-card-tag:hover {
+  background-color: var(--card-color-active);
+}
+
+/* BETTERDISCORD ADDON STORE -> PAGINATION */
+.bd-flower-star {
+  color: hsl(var(--success-hsl));
+}
+
+.bd-flower-star-checkmark {
+  color: var(--success-text-color);
+}
+
+.bd-paginator .bd-button {
+  margin: 0 !important;
+}
+
+.bd-paginator-bubbles {
+  gap: 8px;
+}
+
+.bd-paginator-bubble {
+  margin: 0;
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.bd-paginator-bubble:hover {
+  background-color: var(--card-button-color-hover);
+  color: var(--interactive-text-default);
+}
+.bd-paginator-bubble[data-selected=true] {
+  background-color: hsl(var(--accent-hsl--material-you));
+  color: var(--accent-text-color--material-you);
+}
+
+/* BETTERDISCORD ADDON STORE -> MESSAGE EMBED */
+.message__5126c .bd-addon-store-card {
+  --card-color-filled: var(--attachment-color);
+  --card-color-hover: var(--attachment-color);
+  --card-radius-big: var(--media-radius);
+}
+.message__5126c .bd-addon-store-card:hover {
+  box-shadow: none !important;
+}
+
+/* BETTERDISCORD ADDON STORE -> INSTALL MODAL */
+.bd-install-modal-preview-img {
+  border-radius: var(--card-radius-big);
+}
+
+.bd-install-modal-author-mask {
+  background-color: var(--popout-color);
+}
+
+.bd-install-modal-items {
+  padding: 16px;
+  background-color: var(--card-color-filled);
+  border-radius: var(--card-radius-big);
+}
+.bd-install-modal-items .bd-install-modal-item {
+  padding: 12px 0;
+}
+.bd-install-modal-items .bd-install-modal-item:not(:last-child) {
+  border-bottom-color: var(--card-border-color);
+}
+
+/*
+ *
+ *  BETTERDISCORD SWITCHES
+ *
+ */
+.bd-switch {
+  width: var(--switch-width);
+  height: var(--switch-height);
+  overflow: visible;
+}
+.bd-switch.bd-switch-disabled {
+  opacity: 0.35;
+}
+.bd-switch .bd-switch-body {
+  --switch-color: var(--switch-slider-color);
+  --switch-animation: 250ms cubic-bezier(0,0.3,0.7,1) all;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--switch-radius);
+  border: var(--switch-border-size) solid var(--switch-knob-color);
+  transition: var(--switch-animation);
+  box-sizing: border-box;
+  overflow: visible;
+}
+.bd-switch .bd-switch-body .bd-switch-slider {
+  width: var(--switch-knob-size);
+  height: var(--switch-knob-size);
+  inset-block-start: 50%;
+  inset-inline-start: 5px;
+  margin: 0;
+  transform: translate(0, -50%);
+  overflow: visible;
+  transition: var(--switch-animation);
+}
+.bd-switch .bd-switch-body .bd-switch-slider .bd-switch-handle {
+  width: 28px;
+  height: 28px;
+  x: 0;
+  y: -3.5px;
+  rx: 14px;
+  fill: var(--switch-knob-color);
+  transition: var(--switch-animation);
+}
+.bd-switch .bd-switch-body .bd-switch-slider .bd-switch-symbol {
+  display: none;
+}
+.bd-switch input:active + .bd-switch-body {
+  --switch-color: var(--switch-slider-color);
+}
+.bd-switch input:active + .bd-switch-body .bd-switch-handle {
+  width: 28px;
+  height: 28px;
+  x: 4px;
+  y: -4px;
+}
+.bd-switch input:checked + .bd-switch-body {
+  --switch-color: var(--switch-slider-checked);
+  border-color: transparent;
+}
+.bd-switch input:checked + .bd-switch-body .bd-switch-slider {
+  --switch-knob-x-position: calc((var(--switch-knob-checked-size) / 2) + (var(--switch-border-size) * 2.5));
+  width: var(--switch-knob-checked-size);
+  height: var(--switch-knob-checked-size);
+  inset-inline-start: 0;
+  transform: translate(var(--switch-knob-x-position), -50%);
+}
+.bd-switch input:checked + .bd-switch-body .bd-switch-slider .bd-switch-handle {
+  fill: var(--switch-knob-checked);
+}
+.bd-switch input:checked:active + .bd-switch-body {
+  --switch-color: var(--switch-slider-checked);
+}
+.bd-switch input:checked:active + .bd-switch-body .bd-switch-handle {
+  x: -12.5px;
+}
+
+/*
+ *
+ *  BETTERDISCORD TOAST
+ *
+ */
+.bd-toast {
+  display: flex;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 20px;
+  background-color: var(--tooltip-color);
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--tooltip-text-color);
+}
+.bd-toast.toast-success, .bd-toast.toast-error, .bd-toast.toast-info {
+  gap: var(--space-8);
+  background-color: var(--tooltip-color);
+  color: var(--tooltip-text-color);
+}
+.bd-toast.toast-success:before, .bd-toast.toast-error:before, .bd-toast.toast-info:before {
+  display: flex;
+  position: relative;
+  content: " ";
+  width: 18px;
+  height: 18px;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 100%;
+  background-color: var(--tooltip-text-color);
+}
+.bd-toast svg {
+  display: none;
+}
+.bd-toast span {
+  line-height: 40px;
+  padding: 0;
+}
+.bd-toast.toast-success {
+  --tooltip-color: hsl(var(--success-hsl));
+  --tooltip-text-color: var(--success-text-color);
+}
+.bd-toast.toast-success:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/check_circle.svg);
+}
+.bd-toast.toast-error {
+  --tooltip-color: hsl(var(--alert-hsl));
+  --tooltip-text-color: var(--alert-text-color);
+}
+.bd-toast.toast-error:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/cancel.svg);
+}
+.bd-toast.toast-info {
+  --tooltip-color: hsl(var(--accent-hsl--material-you));
+  --tooltip-text-color: var(--accent-text-color--material-you);
+}
+.bd-toast.toast-info:before {
+  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/info.svg);
+}
+
+/*
+ *
+ *  VENCORD PLUGIN - MemberCount
+ *
+ */
+.vc-membercount-widget {
+  --color-online: hsl(var(--success-hsl)) !important;
+  --color-total: var(--primary-300) !important;
+  display: flex;
+  gap: 16px;
+  margin-inline-start: 0;
+}
+.vc-membercount-widget > div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.vc-membercount-online-dot,
+.vc-membercount-total-dot {
+  margin: 0;
+}
+
+/*
+ *
+ *  VENCORD PLUGIN - Oneko
+ *
+ */
+#oneko {
+  z-index: 1001;
+}
+
+/*
+ *
+ *  VENCORD PLUGIN - PermissionViewer
+ *
+ */
+.vc-permviewer-role-button {
+  --button-height: 28px;
+}
+
+/*.translate_faf9c0 {
+    > .container__3dde2 {
+        padding: 16px;
+        border-radius: var(--popout-radius-big);
+    }
+}*/
+/*
+ *
+ *  VENCORD PLUGIN - PlainFolderIcon
+ *
+ */
+.vc-plainFolderIcon-plain {
+  background-color: transparent;
+}
+.vc-plainFolderIcon-plain .folderPreviewWrapper__48112 {
+  background-color: color-mix(in oklab, var(--custom-folder-color, var(--bg-brand)) 40%, transparent);
+}
+
+/*
+ *
+ *  VENCORD PLUGIN - ReadAllNotification
+ *
+ */
+.wrapper_ef3116 .button__201d5 {
+  --button-height: 22px;
+  --button-padding-start: 4px;
+  --button-padding-end: 4px;
+  width: auto;
+  margin: 0 10px;
+  font-size: 12px !important;
+}
+
+/*
+ *
+ *  VENCORD PLUGIN - ReviewDB
+ *
+ */
+.vc-rdb-modal-footer > div {
+  margin: 0;
+}
+.vc-rdb-modal-footer .vc-rdb-review {
+  margin-block-start: 0;
+}
+
+.vc-rdb-review {
+  --message-color: var(--message-color-alt);
+  --message-color-hover: var(--message-color-alt);
+  margin-block-start: 8px;
+  margin-inline-start: 52px !important;
+}
+.vc-rdb-review:hover {
+  background-color: var(--message-color-hover) !important;
+}
+.vc-rdb-review .avatar_c19a55 {
+  inset-inline-start: -52px !important;
+}
+
+.vc-rdb-review-comment {
+  margin-block-end: 0;
+}
+
+.vc-rdb-input {
+  margin-block-start: 12px !important;
+  background-color: var(--input-color) !important;
+  border-radius: 22px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.vc-rdb-input .placeholder__1b31f {
+  color: var(--input-placeholder-color);
+}
+.vc-rdb-input .editor__1b31f {
+  color: var(--input-text-color);
+}
+.vc-rdb-input .buttons__74017 {
+  margin-inline-end: 0 !important;
+}
+
+/*
+ *
+ *  VENCORD BUTTONS
+ *
+ */
+.vc-btn-base {
+  --button-background: hsl(var(--accent-hsl--material-you));
+  --button-text-color: var(--accent-text-color--material-you);
+  --button-shadow: none;
+  --button-outline: none;
+  background-color: var(--button-background) !important;
+  border: var(--button-outline) !important;
+  box-shadow: var(--button-shadow);
+  color: var(--button-text-color) !important;
+  font-size: var(--button-font-size) !important;
+  font-weight: 500;
+}
+.vc-btn-base:after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  background-color: var(--button-action-color);
+  border-radius: var(--button-radius);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--default-time) var(--default-animation) opacity;
+}
+.vc-btn-base:hover {
+  background-color: var(--button-background) !important;
+}
+.vc-btn-base:hover:after {
+  opacity: var(--button-action-hover);
+}
+.vc-btn-base:active:after {
+  opacity: var(--button-action-active);
+}
+.vc-btn-base:disabled {
+  opacity: 0.5 !important;
+}
+.vc-btn-base:disabled:after {
+  display: none;
+}
+
+/* VENCORD BUTTONS -> COLORS */
+.vc-btn-primary {
+  --button-background: hsl(var(--accent-hsl--material-you));
+  --button-text-color: var(--accent-text-color--material-you);
+}
+
+.vc-btn-secondary {
+  --button-background: var(--accent-secondary-color);
+  --button-text-color: var(--accent-secondary-text-color);
+}
+
+.vc-btn-dangerPrimary {
+  --button-background: hsl(var(--alert-hsl));
+  --button-text-color: var(--alert-text-color);
+}
+
+.vc-btn-dangerSecondary,
+.vc-plugins-disable-warning {
+  --button-background: hsl(from hsl(var(--alert-hsl)) h s l / 0.25);
+  --button-text-color: hsl(from hsl(var(--alert-hsl)) h s calc(l * 0.96));
+  --button-action-color: hsl(var(--alert-hsl));
+}
+
+/* VENCORD BUTTONS -> SIZES */
+.vc-btn-min,
+.vc-btn-small,
+.vc-btn-medium_cf4812 {
+  min-width: var(--button-height) !important;
+  height: var(--button-height) !important;
+  min-height: var(--button-height) !important;
+  padding-inline-start: var(--button-padding-start) !important;
+  padding-inline-end: var(--button-padding-end) !important;
+  line-height: var(--button-height) !important;
+  border-radius: var(--button-radius) !important;
+}
+
+/*
+ *
+ *  VENCORD BUTTONS
+ *
+ */
+.vc-card-base {
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: var(--space-16);
+  border-radius: var(--card-radius-big);
+  box-shadow: none;
+}
+
+/*
+ *
+ *  VENCORD SETTINGS
+ *
+ */
+.vc-settings-tab-bar {
+  height: 48px;
+  border-bottom-width: 1px !important;
+}
+.vc-settings-tab-bar .item_aa8da2 {
+  height: inherit;
+  line-height: 48px;
+  margin: 0;
+  padding: 0 8px;
+  border-radius: 0;
+  border: none !important;
+  color: var(--interactive-text-default) !important;
+}
+.vc-settings-tab-bar .item_aa8da2.selected_aa8da2 {
+  position: relative;
+  background-color: transparent !important;
+  border: none;
+}
+.vc-settings-tab-bar .item_aa8da2.selected_aa8da2:after {
+  position: absolute;
+  content: " ";
+  width: 80%;
+  height: 3px;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  margin: 0 auto;
+  background: var(--tab-border-color);
+  border-radius: 3px;
+  transition: var(--default-time) ease all;
+}
+.vc-settings-tab-bar + .divider_ae36e5 {
+  display: none;
+}
+
+.vc-settings-card .h5_b717a1,
+.vc-plugins-info-card .h5_b717a1 {
+  margin-block-end: 0;
+  padding-block-end: 16px;
+  line-height: normal;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: var(--card-header-text-color);
+}
+.vc-settings-card .divider_ae36e5,
+.vc-plugins-info-card .divider_ae36e5 {
+  margin: 16px 0;
+}
+
+.vc-plugin-stats {
+  padding: 16px;
+}
+
+.vc-plugin-stats-card-divider {
+  border-left-color: var(--card-button-color);
+}
+
+.vc-special-card {
+  background-image: none !important;
+}
+.vc-special-card .vc-special-title {
+  font-size: 18px;
+  color: var(--header-primary);
+}
+.vc-special-card .vc-special-text {
+  color: var(--interactive-text-default);
+}
+.vc-special-card .justifyStart_abf706 {
+  gap: 8px;
+}
+.vc-special-card img {
+  margin: 16px;
+}
+
+.vc-settings-quickActions-card {
+  display: flex;
+  justify-content: start;
+}
+
+.vc-settings-quickActions-pill {
+  height: var(--button-height);
+  padding-inline-start: var(--button-padding-has-icon);
+  padding-inline-end: var(--button-padding-end);
+  background-color: hsl(var(--accent-hsl--material-you)) !important;
+  border-radius: var(--button-radius);
+  font-size: var(--button-font-size);
+  font-weight: 500;
+  color: var(--accent-text-color--material-you);
+}
+.vc-settings-quickActions-pill:hover {
+  background-color: hsl(var(--accent-hsl--material-you));
+  box-shadow: none;
+  transform: none;
+}
+.vc-settings-quickActions-pill .vc-settings-quickActions-img {
+  width: 18px;
+  height: 18px;
+}
+
+.vc-error-card {
+  padding: 16px;
+  background-color: hsl(var(--alert-hsl), 0.1);
+  border-radius: var(--card-radius-big);
+  border-color: hsl(var(--alert-hsl));
+}
+
+/* VENCORD SETTINGS -> PLUGINS */
+.vc-plugins-info-card {
+  height: auto !important;
+}
+
+.vc-plugins-filter-controls .wrapper__72c38:last-of-type {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.vc-plugins-filter-controls .select_a16aea {
+  box-shadow: none !important;
+}
+
+.vc-addon-card {
+  background-color: var(--card-color-filled) !important;
+  border: none !important;
+  padding: 16px !important;
+  border-radius: var(--card-radius-big) !important;
+  box-shadow: none !important;
+}
+.vc-addon-card:hover {
+  box-shadow: none !important;
+  transform: none !important;
+}
+.vc-addon-card .container__3f21e .slider__3f21e {
+  transform: translate(4px, -50%) !important;
+  transition: var(--default-time) var(--default-animation) all;
+}
+.vc-addon-card .container__3f21e.checked__3f21e .slider__3f21e {
+  transform: translate(calc(100% - 1px), -50%) !important;
+}
+
+.vc-addon-header {
+  height: auto !important;
+  margin-block-end: 12px !important;
+  justify-content: flex-start !important;
+}
+.vc-addon-header .vc-addon-name-author {
+  overflow: hidden;
+  font-size: 1.1em !important;
+  font-weight: 400;
+}
+.vc-addon-header .vc-addon-name-author .vc-addon-name {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+
+.vc-addon-note:not(:last-child) {
+  margin-block-end: 0.875em !important;
+}
+.vc-addon-note + div:not([class]) {
+  font-size: 14px;
+}
+
+/* VENCORD SETTINGS -> THEMES */
+.vc-settings-theme-links {
+  padding: 12px !important;
+  background-color: var(--input-color);
+  border-radius: 4px 4px 0 0 !important;
+  border: none !important;
+  box-shadow: inset 0 -1px 0 0 var(--input-border-color);
+  line-height: 1.375rem;
+  font-size: 1rem;
+  color: var(--input-text-color) !important;
+  transition: var(--default-time) var(--default-animation) box-shadow;
+}
+.vc-settings-theme-links:focus {
+  background-color: var(--input-color);
+  box-shadow: inset 0 -2px 0 0 hsl(var(--accent-hsl--material-you));
+}
+
+.cardPrimary__73069[style*="padding: 0.5em"] {
+  padding: 16px !important;
+}
+
+/* VENCORD SETTINGS -> BACKUP AND RESTORE */
+.vc-backup-restore-card > div {
+  gap: 0 !important;
+}
+.vc-backup-restore-card strong {
+  padding-block-end: 16px;
+  line-height: normal;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: var(--card-header-text-color) !important;
+}
+
+/* VENCORD SETTINGS -> NOTIFICATION */
+.vc-notification-root {
+  inset-block-start: calc(var(--custom-app-top-bar-height) + var(--space-8));
+  inset-inline-end: var(--space-8) !important;
+  inset-block-end: unset !important;
+  background-color: var(--popout-color) !important;
+  border-radius: var(--popout-radius-big) !important;
+  box-shadow: var(--shadow-medium) !important;
+}
+.vc-notification-root .vc-notification-title {
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+}
+
+/* VENCORD SETTINGS -> VISUAL REFRESH */
+.visual-refresh .vc-plugins-info-card,
+.visual-refresh .vc-plugin-stats {
+  background-color: var(--card-color-filled) !important;
+  border: none !important;
+  border-radius: var(--card-radius-big) !important;
+}
+.visual-refresh .vc-plugins-info-card:hover,
+.visual-refresh .vc-plugin-stats:hover {
+  background-color: var(--card-color-filled) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/*
+ *
+ *  VENCORD SWITCHES
+ *
+ */
+.vc-switch-container {
+  width: var(--switch-width);
+  height: var(--switch-height);
+  background-color: var(--switch-slider-color);
+  border-radius: var(--switch-radius);
+  border: var(--switch-border-size) solid var(--switch-knob-color);
+  transition: var(--default-time) var(--default-animation) background-color, var(--default-time) var(--default-animation) border;
+}
+.vc-switch-container.vc-switch-checked {
+  background-color: hsl(var(--accent-hsl--material-you));
+  border-color: hsl(var(--accent-hsl--material-you));
+}
+.vc-switch-container.vc-switch-checked .vc-switch-slider {
+  --switch-knob-size: var(--switch-knob-checked-size);
+  --switch-knob-x-position: calc(var(--switch-radius) + var(--switch-border-size) * 2);
+  transform: translateX(var(--switch-knob-x-position)) !important;
+}
+.vc-switch-container.vc-switch-checked .vc-switch-slider rect {
+  fill: var(--accent-text-color--material-you);
+}
+.vc-switch-container.vc-switch-checked .vc-switch-slider path {
+  fill: hsl(var(--accent-hsl--material-you));
+}
+
+.vc-switch-slider {
+  width: var(--switch-knob-size);
+  height: var(--switch-knob-size);
+  inset-block-start: 0;
+  inset-block-end: 0;
+  margin: auto 0;
+  transform: translateX(4px) !important;
+  transition: var(--default-time) var(--default-animation) width, var(--default-time) var(--default-animation) height, var(--default-time) var(--default-animation) transform;
+}
+.vc-switch-slider rect {
+  fill: var(--switch-knob-color);
+}
+.vc-switch-slider path {
+  fill: var(--switch-slider-color);
+}
+.vc-switch-slider path,
+.vc-switch-slider rect {
+  transform: scale(1.4) translate(-4px, -3px);
+}
+

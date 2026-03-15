@@ -5663,17 +5663,15 @@ body:active .container__16eb0:not(:active) {
 }
 
 .header__0856d {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px 8px;
   border-block-end: 1px solid var(--separator-color);
   box-shadow: none;
-  padding: 12px 8px 8px;
+  background-color: transparent;
 }
 
-/* Search bar wrapper inside header */
-.header__0856d .wrapper__0d1ef {
-  padding: 0 8px;
-}
-
-/* Settings/volume icon click area */
 .settingsClickArea__61424 {
   width: var(--button-height);
   height: var(--button-height);
@@ -5694,8 +5692,6 @@ body:active .container__16eb0:not(:active) {
 .categoryList_a1e0e0 .scrollerBase_d125d2 {
   --scrollbar-width: 0;
 }
-
-/* Individual category icons in sidebar */
 .category_a1e0e0 {
   border-radius: 50%;
   transition: var(--default-time) var(--default-animation) background-color;
@@ -5704,44 +5700,71 @@ body:active .container__16eb0:not(:active) {
   background-color: var(--menu-item-hover);
 }
 
-.categoryIcon_a1e0e0 {
-  border-radius: 50%;
-}
-
-/* Section headers */
+/* Section headers — remove the solid bar look */
 .sectionContainer__61424 {
   margin-block-end: 4px;
 }
-
 .sectionHeader__61424 {
   padding: 4px 8px;
+  background-color: transparent !important;
   border-radius: var(--card-radius);
   transition: var(--default-time) var(--default-animation) background-color;
 }
 .sectionHeader__61424:hover {
-  background-color: var(--menu-item-hover);
+  background-color: var(--menu-item-hover) !important;
 }
-
+.sectionHeaderContent__61424 {
+  background-color: transparent !important;
+}
 .sectionTitle__61424 {
   font-size: 14px;
   text-transform: none;
 }
 
-/* Sound buttons */
+/* Sound rows — fix the grid layout */
+.soundRow__61424 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 0 8px 4px;
+  margin: 0;
+  list-style: none;
+}
+
+/* Sound button wrapper */
+.soundButtonWrapper__9be63 {
+  list-style: none;
+}
+
+/* Sound buttons — make them proper compact squares */
 .soundButton__9be63 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 8px 4px;
   background-color: var(--card-button-color);
   border-radius: 20px;
+  overflow: hidden;
   transition: var(--default-time) var(--default-animation) background-color;
+  cursor: pointer;
 }
-.soundButton__9be63:hover {
+.soundButton__9be63:hover,
+.soundButton__9be63.hoverActiveBackground__9be63 {
   background-color: var(--card-button-color-hover);
 }
-.soundButton__9be63.soundAddButton_da9eb2 {
-  background-color: var(--card-button-color);
-  border-radius: 20px;
+
+/* Add sound button */
+.soundAddButton_da9eb2 {
+  border: 1px dashed var(--card-border-color) !important;
+  background-color: transparent !important;
 }
-.soundButton__9be63.soundAddButton_da9eb2:hover {
-  background-color: var(--card-button-color-hover);
+.soundAddButton_da9eb2:hover {
+  background-color: var(--card-button-color) !important;
+  border-color: transparent !important;
 }
 
 .buttonOverlayBackground__9be63 {
@@ -5749,12 +5772,32 @@ body:active .container__16eb0:not(:active) {
   border-radius: 20px;
 }
 
-/* Nitro locked section */
+/* Sound name text */
+.soundName__9be63 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  font-size: 11px;
+}
+
+/* Emoji inside button */
+.emoji__9be63 {
+  width: 28px;
+  height: 28px;
+  margin-block-end: 4px;
+}
+
+/* Nitro locked sections */
 .sectionContainerNitroLocked__61424 {
-  opacity: 0.6;
+  opacity: 0.55;
 }
 .sectionContainerNitroLockedBackground__61424 {
-  background-color: transparent;
+  background-color: transparent !important;
+}
+.soundRowNitroLocked__61424 .soundButton__9be63 {
+  cursor: not-allowed;
 }
 
 /* Nitro divider */
@@ -5765,15 +5808,19 @@ body:active .container__16eb0:not(:active) {
 .nitroTopDividerLockBorderReversed_b3fb5f {
   border-color: hsl(var(--accent-hsl--material-you));
 }
-
-/* Upsell banner at bottom */
-.upsellContainer__0b69f {
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-  margin: 8px;
+.nitroTopDividerLower_b3fb5f {
+  background-color: transparent;
 }
 
-/* Premium promo if shown */
+/* Upsell banner */
+.upsellContainer__0b69f {
+  margin: 8px;
+  padding: 12px;
+  background-color: var(--card-color-filled);
+  border-radius: var(--card-radius-big);
+}
+
+/* Premium promo */
 .premiumPromo__3a1b6 {
   background-color: var(--popout-color);
   border-radius: var(--popout-radius-big);

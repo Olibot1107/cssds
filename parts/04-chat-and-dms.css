@@ -1495,20 +1495,6 @@
   width: auto;
   margin: 0;
 }
-/* Always show likely-spam messages, hide the "Hide" action */
-.spamBanner_a2eac3 .actionButtons_a2eac3 {
-  display: none;
-}
-.spamBanner_a2eac3 .bannerTextContainer_a2eac3 {
-  margin-inline: 0;
-}
-.chat_a44415 div[aria-label*="likely spammer" i],
-.chat_a44415 div[aria-label*="spam" i] {
-  display: block !important;
-  opacity: 1 !important;
-  filter: none !important;
-  max-height: none !important;
-}
 
 /* MAIN TEXTAREA -> INTRODUCTION */
 .banner__183e8 {
